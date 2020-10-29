@@ -1,0 +1,73 @@
+parallel_n_queens.cpp: In function ‘int main(int, char**)’:
+parallel_n_queens.cpp:80:25: error: ‘std::chrono’ has not been declared
+     auto started = std::chrono::high_resolution_clock::now();
+                         ^~~~~~
+parallel_n_queens.cpp:224:22: error: ‘std::chrono’ has not been declared
+     auto done = std::chrono::high_resolution_clock::now();
+                      ^~~~~~
+parallel_n_queens.cpp:226:42: error: ‘std::chrono’ has not been declared
+         std::cout << "runtime: " << std::chrono::duration_cast<std::chrono::milliseconds>(done-started).count()/1000.0 <<" seconds.\n";
+                                          ^~~~~~
+parallel_n_queens.cpp:226:69: error: ‘std::chrono’ has not been declared
+         std::cout << "runtime: " << std::chrono::duration_cast<std::chrono::milliseconds>(done-started).count()/1000.0 <<" seconds.\n";
+                                                                     ^~~~~~
+--------------------------------------------------------------------------
+mpirun was unable to find the specified executable file, and therefore
+did not launch the job.  This error was first reported for process
+rank 0; it may have occurred for other processes as well.
+
+NOTE: A common cause for this error is misspelling a mpirun command
+      line parameter option (remember that mpirun interprets the first
+      unrecognized command line token as the executable).
+
+Node:       spartan-snowy026
+Executable: parallel_n_queens
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun was unable to find the specified executable file, and therefore
+did not launch the job.  This error was first reported for process
+rank 0; it may have occurred for other processes as well.
+
+NOTE: A common cause for this error is misspelling a mpirun command
+      line parameter option (remember that mpirun interprets the first
+      unrecognized command line token as the executable).
+
+Node:       spartan-snowy026
+Executable: parallel_n_queens
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun was unable to find the specified executable file, and therefore
+did not launch the job.  This error was first reported for process
+rank 0; it may have occurred for other processes as well.
+
+NOTE: A common cause for this error is misspelling a mpirun command
+      line parameter option (remember that mpirun interprets the first
+      unrecognized command line token as the executable).
+
+Node:       spartan-snowy026
+Executable: parallel_n_queens
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun was unable to find the specified executable file, and therefore
+did not launch the job.  This error was first reported for process
+rank 0; it may have occurred for other processes as well.
+
+NOTE: A common cause for this error is misspelling a mpirun command
+      line parameter option (remember that mpirun interprets the first
+      unrecognized command line token as the executable).
+
+Node:       spartan-snowy026
+Executable: parallel_n_queens
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun was unable to find the specified executable file, and therefore
+did not launch the job.  This error was first reported for process
+rank 0; it may have occurred for other processes as well.
+
+NOTE: A common cause for this error is misspelling a mpirun command
+      line parameter option (remember that mpirun interprets the first
+      unrecognized command line token as the executable).
+
+Node:       spartan-snowy026
+Executable: parallel_n_queens
+--------------------------------------------------------------------------

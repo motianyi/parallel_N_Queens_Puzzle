@@ -2,7 +2,7 @@
 #include <iostream>
 #include <stdlib.h>		
 #include <mpi.h>
-
+#include <chrono>
 
 bool validChessBoard(int n, int** board, int row, int col);
 bool placeQueen(int n, int** board, int col);
