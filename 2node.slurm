@@ -13,4 +13,4 @@ module load gcc/8.3.0
 module load openmpi/3.1.4 
 
 mpicxx -std=c++14 -fopenmp -o n_queens n_queens.cpp -O3
-mpirun -np 2 time seqalign-mpi-tianyim 14
+mpirun -np 2 time n_queens 14
