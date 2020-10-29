@@ -1,7 +1,7 @@
 #!/bin/bash
 
-#SBATCH --error=1result_parallel_nqueen-%j.err
-#SBATCH --output=1result_parallel_nqueen-%j.out
+#SBATCH --error=result_seq_nqueen-%j.err
+#SBATCH --output=result_seq_nqueen-%j.out
 #SBATCH --partition=snowy
 #SBATCH --time=0:40:00
 #SBATCH --nodes=1-1
@@ -12,5 +12,7 @@
 module load gcc/8.3.0
 module load openmpi/3.1.4 
 
-mpicxx -std=c++14 -fopenmp -o parallel_n_queens ../parallel_n_queens.cpp -O3
-mpirun -np 1 parallel_n_queens 16
+g++ -std=c++14 -fopenmp -o n_queens ../n_queens.cpp -O3
+
+time ./n_queens 16
+
