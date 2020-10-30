@@ -1,16 +1,16 @@
 #!/bin/bash
 
-#SBATCH --error=8core_result_parallel_nqueen.err
-#SBATCH --output=8core_result_parallel_nqueen.out
+#SBATCH --error=25core_result_parallel_nqueen.err
+#SBATCH --output=25core_result_parallel_nqueen.out
 #SBATCH --partition=snowy
 #SBATCH --time=0:40:00
 #SBATCH --nodes=1-1
 #SBATCH --cpus-per-task=1
-#SBATCH --ntasks-per-node=8
+#SBATCH --ntasks-per-node=25
 #SBATCH --mem=32G #SBATCH --job-name=parallel_tianyim 
 # You need to load a compiler before openmpi.
 module load gcc/8.3.0
 module load openmpi/3.1.4 
 
 mpicxx -std=c++14 -fopenmp -o parallel_n_queens ../parallel_n_queens.cpp -O3
-mpirun -np 8 parallel_n_queens 16
+mpirun -np 25 parallel_n_queens 16
