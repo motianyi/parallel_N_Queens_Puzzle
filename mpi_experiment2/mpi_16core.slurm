@@ -1,7 +1,7 @@
 #!/bin/bash
 
-#SBATCH --error=16core_result_parallel_nqueen.err
-#SBATCH --output=16core_result_parallel_nqueen.out
+#SBATCH --error=err/16core_result_parallel_nqueen.err
+#SBATCH --output=out/16core_result_parallel_nqueen.out
 #SBATCH --partition=snowy
 #SBATCH --time=0:40:00
 #SBATCH --nodes=1-1
