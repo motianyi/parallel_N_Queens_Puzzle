@@ -10,10 +10,10 @@ plot folder #python scripts to plot the charts
 
 mpi_experiment #scripts and outputs
 
-mpi_experiment2 #scripts  
-mpi_experiment2/out #outputs for mpi_experiment3
+mpi_experiment2 #scripts  (for 2 - 32 cores)
+mpi_experiment2/out #outputs for mpi_experiment2
 
-mpi_experiment3 #scripts and outputs
+mpi_experiment3 #scripts and outputs (for 34 to 64 cores)
 mpi_experiment3/out #outputs for mpi_experiment3
 
 testing # other scripts and outputs
