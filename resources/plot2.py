@@ -24,8 +24,10 @@ for result in results:
     print(result)
     x.append(result[0])
     z.append(132.388/result[1])
-plt.plot(x[:11],z[:11])
-plt.plot(x1[1:],z1[1:])
+plt.plot(x[:11],z[:11],label='All cores on different nodes')
+plt.plot(x1[1:],z1[1:],label='All cores on same node')
 plt.xlabel("Number of cores")
 plt.ylabel("Speedup")
+plt.legend(loc='upper left')
+
 plt.show()

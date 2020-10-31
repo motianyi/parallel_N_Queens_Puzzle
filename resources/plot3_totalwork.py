@@ -4,7 +4,7 @@ y1 = [132.388, 133.095, 66.71, 44.808, 33.836, 27.154, 22.819, 19.566, 17.556, 1
 z1 = []
 
 for i in range(0, 12):
-    print(i)
+    # print(i)
     z1.append(132.388/y1[i])
 # plt.plot(x1,z1)
 # plt.show()
@@ -21,12 +21,14 @@ results = [[2, 134.4], [3, 67.329],[4,44.858],[5,33.867],[6,27.284],[7, 22.973],
 x = []
 z = []
 for result in results:
-    print(result)
+    print(result[0], (result[0] - 1) * result[1])
     x.append(result[0])
-    z.append(132.388/result[1])
-    print(result[0],132.388/result[1])
+    z.append((result[0] - 1) * result[1])
+    # print(result[0],132.388/result[1])
 plt.plot(x,z)
 # plt.plot(x1,z1)
 plt.xlabel("Number of cores")
-plt.ylabel("Speedup")
+plt.ylabel("Number of cores * Time")
+plt.ylim((0, 250)) 
+
 plt.show()
