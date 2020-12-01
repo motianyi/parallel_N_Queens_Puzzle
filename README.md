@@ -1,42 +1,29 @@
 # parallel_N_Queens_Puzzle
-This is the project3 for COMP90025 at University of Melbourne (Semester 2, 2020)
+Author: Tianyi Mo  
+
+This is the project 3 for Parallel and Multicore Computing (COMP90025) at The University of Melbourne (Semester 2, 2020). This project including analysing of some popular algorithms for solving the n queen project. It implements the sequential and parallel algorithm and compare their performance. The details of the algorithm can be found in [the project report](/report.pdf).
+
 ## Files
-```python
-report.pdf # the report of the project
-n_queens.cpp # sequential C++ implementation 
 
-parallel_n_queens.cpp #parallel C++ implementation  
+* `report.pdf` - the report of the project
+
+* `src`
+  * `src/n_queens.cpp` - sequential C++ implementation 
+  * `src/parallel_n_queens.cpp` - parallel C++ implementation  
    
-plot folder #python scripts to plot the charts 
+* `experiment`
+  * `experiment/mpi_experiment` - scripts and outputs
 
-mpi_experiment #scripts and outputs
+  * `expeeriment/mpi_experiment2` - scripts (for 2 - 32 cores)
+  * `expeeriment/mpi_experiment2/out` - outputs for mpi_experiment2
 
-mpi_experiment2 #scripts (for 2 - 32 cores)
-mpi_experiment2/out #outputs for mpi_experiment2
+  * `expeeriment/mpi_experiment3` - scripts (for 34 to 64 cores)
+  * `expeeriment/mpi_experiment3/out` - outputs for mpi_experiment3
+* `plot` - python scripts to visualize the performance 
 
-mpi_experiment3 #scripts (for 34 to 64 cores)
-mpi_experiment3/out #outputs for mpi_experiment3
 
-testing # other scripts and outputs
 
-```
-
-Commands to run on Mac OS
-```
-# complie
-g++ -O3 -o n_queens n_queens.cpp
-
-# execute
-
-./seq_n-queens_cpp N
-```
-```
-# parallel complie
-mpic++ -o parallel_n_queens parallel_n_queens.cpp -O3 -std=c++14
-
-# parallel execute
-mpirun -n 6 ./parallel_n_queens N
-```
+## Running commands on Linux Cluster / Mac OS
 
 Commands to run on Linux (Spartan Cluster)
 
@@ -103,4 +90,23 @@ module load openmpi/3.1.4
 mpicxx -std=c++14 -fopenmp -o parallel_n_queens ../parallel_n_queens.cpp -O3
 mpirun -np 64 parallel_n_queens 16
 
+```
+
+
+
+Commands to run on Mac OS
+
+```
+# complie
+g++ -O3 -o n_queens n_queens.cpp
+
+# execute
+./seq_n-queens_cpp N
+```
+```
+# parallel complie
+mpic++ -o parallel_n_queens parallel_n_queens.cpp -O3 -std=c++14
+
+# parallel execute
+mpirun -n 6 ./parallel_n_queens N
 ```
