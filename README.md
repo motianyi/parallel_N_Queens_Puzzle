@@ -1,7 +1,7 @@
 # parallel_N_Queens_Puzzle
 Author: Tianyi Mo  
 
-This is the project 3 for Parallel and Multicore Computing (COMP90025) at The University of Melbourne (Semester 2, 2020). This project including analysing of some popular algorithms for solving the n queen project. It implements the sequential and parallel algorithm and compare their performance. The details of the algorithm can be found in [the project report](/report.pdf).
+This is the project 3 for Parallel and Multicore Computing (COMP90025) at The University of Melbourne (Semester 2, 2020). This project including analysing of some popular algorithms for solving the n queen project. It implements the sequential and parallel algorithm (using MPI) and compare their performance. The details of the algorithm can be found in [the project report](/report.pdf).
 
 ## Files
 
